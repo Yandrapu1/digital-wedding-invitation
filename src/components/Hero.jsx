@@ -122,10 +122,10 @@ export const Hero = () => {
                     {/* Romantic Calligraphic Signature Overlay */}
                     <div className="absolute bottom-3 left-0 right-0 text-center px-3 z-10">
                       <span className="font-script text-2xl sm:text-3xl text-ivory drop-shadow-md block font-normal leading-tight">
-                        Gowtham &amp; Sai Sunanda Devi
+                        Gowtham &amp; Sunanda 
                       </span>
                       <span className="font-sans text-[9px] sm:text-[10px] uppercase tracking-widest text-gold-light font-semibold block mt-0.5 drop-shadow">
-                        14th November 2026 • Visakhapatnam
+                        14th November 2026 
                       </span>
                     </div>
                   </div>
@@ -166,7 +166,7 @@ export const Hero = () => {
                 <BalajiIcon className="w-6 h-6 sm:w-7 sm:h-7 text-[#8B1E2B] mt-1" />
               </div>
 
-              {/* Center Column: Shubhamasthu & Royal Monogram */}
+              {/* Center Column: Shubhamasthu & Royal Wedding Logo */}
               <div className="flex flex-col items-center text-center flex-1 px-1">
                 <span className="font-serif italic text-xs sm:text-sm font-bold text-[#8B1E2B] tracking-wide leading-tight">
                   Shubhamasthu
@@ -174,7 +174,13 @@ export const Hero = () => {
                 <span className="font-telugu text-[10px] sm:text-xs text-[#8B1E2B] font-bold leading-tight">
                   శుభమస్తు
                 </span>
-                <RoyalMonogram initials="G & S" className="w-12 h-12 sm:w-14 sm:h-14 mt-0.5" />
+                <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-full overflow-hidden border-2 border-gold shadow-md mt-1 bg-[#FAF7F0] flex items-center justify-center group hover:scale-105 transition-transform">
+                  <img
+                    src="/images/wedding-logo.jpg"
+                    alt="Sunanda & Gowtham Wedding Logo"
+                    className="w-full h-full object-cover object-[center_40%] scale-105"
+                  />
+                </div>
               </div>
 
               {/* Right Column: Avighnamasthu & Kalyana Mandapam */}
@@ -314,21 +320,7 @@ export const Hero = () => {
               </span>
             </div>
 
-            {/* Action Buttons */}
-            <div className="flex flex-row items-center justify-center gap-2 sm:gap-3 mt-2.5 sm:mt-3 w-full max-w-md mx-auto px-1 sm:px-0">
-              <a
-                href="#schedule"
-                className="flex-1 px-3 sm:px-5 py-2 sm:py-2.5 rounded-full bg-gradient-to-r from-[#8B1E2B] via-[#A32333] to-[#8B1E2B] hover:from-[#751622] hover:to-[#751622] text-ivory font-serif text-[11px] sm:text-xs font-bold tracking-wider uppercase shadow-md transition-all duration-300 transform hover:-translate-y-0.5 border-2 border-gold/60 text-center whitespace-nowrap"
-              >
-                View Itinerary
-              </a>
-              <a
-                href="#venue"
-                className="flex-1 px-3 sm:px-5 py-2 sm:py-2.5 rounded-full bg-white hover:bg-[#FAF7F0] text-[#241A15] hover:text-[#8B1E2B] font-serif text-[11px] sm:text-xs font-bold tracking-wider uppercase border-2 border-gold/60 shadow-sm transition-all duration-300 text-center whitespace-nowrap"
-              >
-                Venue Location
-              </a>
-            </div>
+  
 
           </div>
 

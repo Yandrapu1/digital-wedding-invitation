@@ -132,11 +132,8 @@ export const RoyalMonogram = ({ initials = "G & S", className = "w-32 h-32" }) =
       ))}
     </svg>
     <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-      <span className="font-serif italic text-base sm:text-lg md:text-xl text-espresso font-semibold tracking-wider pt-0.5">
+      <span className="font-serif italic text-base sm:text-lg md:text-xl text-espresso font-semibold tracking-wider">
         {initials}
-      </span>
-      <span className="font-sans text-[7px] sm:text-[8px] md:text-[9px] uppercase tracking-[0.25em] text-gold-dark mt-0.5">
-        Boni &amp; Elipe
       </span>
     </div>
   </div>

@@ -7,10 +7,10 @@ import { SectionFlankOrnaments } from './WeddingSideOrnaments';
 export const LoveStory = () => {
   const chapters = [
     {
-      year: "November 2021",
+      year: "1 July 2026",
       chapter: "Chapter I",
       roman: "I",
-      telugu: "ప్రథమ దర్శనం",
+      telugu: "ప్రథమ దర్శనం: పెళ్లి చూపులు",
       title: "Serendipity by the Godavari Ghats",
       description:
         "A sacred beginning in the cultural capital of Rajahmundry. What started as an auspicious family introduction amidst temple bells and fragrant jasmine blossomed into conversations that felt as timeless as the holy river Godavari.",
@@ -18,7 +18,7 @@ export const LoveStory = () => {
       tag: "The First Glimpse",
     },
     {
-      year: "March 2023",
+      year: " 22 August 2026",
       chapter: "Chapter II",
       roman: "II",
       telugu: "పరిణయ తీరం",
@@ -29,7 +29,7 @@ export const LoveStory = () => {
       tag: "Growing Closer",
     },
     {
-      year: "November 2025",
+      year: "4 September 2026",
       chapter: "Chapter III",
       roman: "III",
       telugu: "శుభ నిశ్చితార్థం",
@@ -40,7 +40,7 @@ export const LoveStory = () => {
       tag: "The Sacred Promise",
     },
     {
-      year: "November 14, 2026",
+      year: "November 14 2026",
       chapter: "Chapter IV",
       roman: "IV",
       telugu: "కళ్యాణ మహోత్సవం",
@@ -252,7 +252,7 @@ export const LoveStory = () => {
 
               {/* Chapter Badge Row */}
               <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mb-2">
-                <span className="font-sans text-[10px] sm:text-xs uppercase tracking-wider text-ivory font-bold px-2.5 sm:px-3 py-0.5 rounded-full bg-gradient-to-r from-[#8B1E2B] to-[#A32333] shadow-sm border border-gold/40">
+                <span className="font-sans text-[10px] sm:text-xs  tracking-wider text-ivory font-bold px-2.5 sm:px-3 py-0.5 rounded-full bg-gradient-to-r from-[#8B1E2B] to-[#A32333] shadow-sm border border-gold/40">
                   {item.year}
                 </span>
                 <span className="font-serif italic text-xs font-bold text-[#8B1E2B]">
@@ -295,7 +295,7 @@ export const LoveStory = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.9 }}
-          className="relative w-full max-w-4xl mx-auto bg-white/95 rounded-[28px] sm:rounded-[36px] p-4 sm:p-7 md:p-8 border-2 border-gold/70 shadow-2xl overflow-hidden"
+          className="relative w-full max-w-5xl mx-auto bg-white/95 rounded-[28px] sm:rounded-[36px] p-3 sm:p-5 md:p-6 border-2 border-gold/70 shadow-2xl overflow-hidden"
         >
           {/* Scalloped Inner Border & Corner Flourishes */}
           <div className="absolute inset-1.5 sm:inset-2.5 border border-[#8B1E2B]/20 rounded-[24px] sm:rounded-[32px] pointer-events-none" />
@@ -333,28 +333,28 @@ export const LoveStory = () => {
               "Like strings upon a sacred Veena tuned to divine grace, two lives unite in melody, resonance, and eternal companionship."
             </p>
 
-            {/* The Horizontal Veena Photo in Royal Frame */}
+            {/* The Horizontal Veena Photo in Royal Frame - Full Uncut Framing */}
             <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-gold/60 shadow-xl bg-[#FAF5EE] group">
-              <div className="relative aspect-[16/9] sm:aspect-[2/1] md:aspect-[2.2/1] w-full overflow-hidden">
+              <div className="relative w-full">
                 <img
                   src="/images/veena.jpg"
                   alt="Chi. Gowtham & Chi. La. Sow. Sai Sunanda Devi with Sacred Veena"
                   onError={(e) => {
                     e.currentTarget.src = "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80";
                   }}
-                  className="w-full h-full object-cover object-center filter contrast-[1.02] transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-auto block filter contrast-[1.02]"
                 />
 
-                {/* Soft Vignette Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#241A15]/80 via-transparent to-black/15 pointer-events-none" />
+                {/* Soft Vignette Overlay at bottom for caption legibility */}
+                <div className="absolute inset-x-0 bottom-0 h-24 sm:h-28 bg-gradient-to-t from-[#241A15]/85 via-[#241A15]/40 to-transparent pointer-events-none" />
 
                 {/* Overlay Caption on Photo */}
-                <div className="absolute bottom-3 sm:bottom-4 left-0 right-0 text-center px-3 z-10">
+                <div className="absolute bottom-2.5 sm:bottom-4 left-0 right-0 text-center px-3 z-10">
                   <span className="font-script text-2xl sm:text-3xl md:text-4xl text-ivory drop-shadow-lg block font-normal leading-tight">
-                    Gowtham &amp; Sai Sunanda Devi
+                    Gowtham &amp; Sunanda 
                   </span>
-                  <span className="font-sans text-[10px] sm:text-xs uppercase tracking-widest text-gold-light font-bold block mt-1 drop-shadow">
-                    నాద బ్రహ్మ స్వరూపం • 14th November 2026 • Visakhapatnam
+                  <span className="font-sans text-[10px] sm:text-xs uppercase tracking-widest text-gold-light font-bold block mt-0.5 sm:mt-1 drop-shadow">
+                    నాద బ్రహ్మ స్వరూపం 
                   </span>
                 </div>
               </div>

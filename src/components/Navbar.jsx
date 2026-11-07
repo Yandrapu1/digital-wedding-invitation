@@ -30,15 +30,17 @@ export const Navbar = () => {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between">
         
-        {/* Left Monogram / Logo */}
+        {/* Left Wedding Logo */}
         <a
           href="#"
           className="flex items-center gap-3 group transition-transform hover:scale-105"
         >
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#8B1E2B] to-[#5C101A] border-2 border-gold flex items-center justify-center shadow-md">
-            <span className="font-serif italic text-base font-bold text-ivory tracking-widest">
-              G&amp;S
-            </span>
+          <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-full overflow-hidden border-2 border-gold shadow-md flex-shrink-0 bg-[#FAF7F0]">
+            <img
+              src="/images/wedding-logo.jpg"
+              alt="Gowtham & Sunanda Wedding Logo"
+              className="w-full h-full object-cover object-[center_40%] scale-105"
+            />
           </div>
           <div className="flex flex-col text-left">
             <span className="font-serif text-sm sm:text-base font-bold text-[#30251F] group-hover:text-[#8B1E2B] transition-colors leading-none tracking-wide">

@@ -308,7 +308,7 @@ export const Envelope = ({ onOpenComplete, onStartMusic }) => {
 
           {/* 3D Realistic Folded Paper Flap */}
           <motion.div
-            className="absolute top-0 left-0 right-0 h-1/2 origin-top z-30 pointer-events-none"
+            className="absolute top-0 left-0 right-0 h-[42%] origin-top z-30 pointer-events-none"
             style={{
               transformStyle: 'preserve-3d',
               backfaceVisibility: 'hidden',
@@ -347,7 +347,7 @@ export const Envelope = ({ onOpenComplete, onStartMusic }) => {
                 opacity="0.6"
               />
             </svg>
-            <div className="absolute top-3 sm:top-5 inset-x-0 text-center">
+            <div className="absolute top-2.5 sm:top-4 inset-x-0 text-center">
               <span className="font-telugu text-[11px] sm:text-xs text-[#874B50] font-bold tracking-wider">
                 శ్రీరస్తు • శుభమస్తు • అవిఘ్నమస్తు
               </span>
@@ -362,11 +362,11 @@ export const Envelope = ({ onOpenComplete, onStartMusic }) => {
                 : { opacity: 0.95, scaleY: 1 }
             }
             transition={{ duration: 0.4 }}
-            className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-7 sm:h-8 bg-gradient-to-r from-[#EFE5D5] via-[#FAF4EA] to-[#EFE5D5] border-y border-[#BEA477]/40 shadow-sm z-25 pointer-events-none"
+            className="absolute left-0 right-0 top-[42%] -translate-y-1/2 h-7 sm:h-8 bg-gradient-to-r from-[#EFE5D5] via-[#FAF4EA] to-[#EFE5D5] border-y border-[#BEA477]/40 shadow-sm z-25 pointer-events-none"
           />
 
           {/* Lower Safe Zone (Uncut details below seal) */}
-          <div className="relative z-10 text-center pb-1 sm:pb-2">
+          <div className="relative z-10 text-center pb-2 sm:pb-3">
             <p className="font-serif text-xs sm:text-sm text-[#57463D] font-semibold tracking-wide">
               Saturday, 14th November 2026 • Visakhapatnam
             </p>
@@ -378,9 +378,9 @@ export const Envelope = ({ onOpenComplete, onStartMusic }) => {
             </p>
           </div>
 
-          {/* Handcrafted G&S Wax Seal in Muted Maroon */}
+          {/* Handcrafted G&S Wax Seal in Vibrant Wedding Red & Tap Pill */}
           <motion.div
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-40 cursor-pointer touch-manipulation group"
+            className="absolute left-1/2 top-[42%] -translate-x-1/2 -translate-y-1/2 z-40 cursor-pointer touch-manipulation group flex flex-col items-center"
             animate={
               stage !== 'sealed'
                 ? { scale: [1, 1.15, 0], opacity: 0, rotate: 10 }
@@ -395,25 +395,25 @@ export const Envelope = ({ onOpenComplete, onStartMusic }) => {
             whileTap={{ scale: 0.95 }}
             onClick={handleBreakSeal}
           >
-            <div className="relative w-18 h-18 sm:w-20 sm:h-20 md:w-[86px] md:h-[86px] rounded-full bg-gradient-to-br from-[#9E5D63] via-[#874B50] to-[#6A383D] p-2 flex items-center justify-center shadow-[0_6px_20px_rgba(135,75,80,0.32),0_0_10px_rgba(190,164,119,0.35)] border-2 border-[#BEA477]/80">
-              <div className="absolute inset-1 rounded-full border border-[#BEA477]/35 pointer-events-none" />
-              <div className="absolute inset-2 rounded-full border border-dashed border-[#BEA477]/45 pointer-events-none" />
+            <div className="relative w-18 h-18 sm:w-20 sm:h-20 md:w-[84px] md:h-[84px] rounded-full bg-gradient-to-br from-[#DC2626] via-[#B91C1C] to-[#7F1D1D] p-2 flex items-center justify-center shadow-[0_6px_22px_rgba(185,28,28,0.48),0_0_14px_rgba(212,175,55,0.38)] border-2 border-[#BEA477]">
+              <div className="absolute inset-1 rounded-full border border-[#FFF3D6]/50 pointer-events-none" />
+              <div className="absolute inset-2 rounded-full border border-dashed border-[#FFF3D6]/60 pointer-events-none" />
 
               <div className="flex flex-col items-center justify-center text-center select-none">
-                <span className="text-[#FFF9EF] text-sm sm:text-base font-serif italic font-bold tracking-widest drop-shadow-sm">
+                <span className="text-[#FFFDF5] text-sm sm:text-base font-serif italic font-bold tracking-widest drop-shadow-[0_1px_2px_rgba(0,0,0,0.35)]">
                   G &amp; S
                 </span>
-                <span className="text-[#EFE5D5] text-[7px] uppercase tracking-[0.22em] font-sans font-bold mt-0.5">
-                  14 • XI • 26
+                <span className="text-[#FDE68A] text-[7px] uppercase tracking-[0.22em] font-sans font-bold mt-0.5">
+                  14 • Nov • 26
                 </span>
               </div>
             </div>
 
-            {/* Tap Hint Badge */}
+            {/* Tap Hint Badge placed neatly directly below seal */}
             {stage === 'sealed' && (
-              <div className="absolute top-[calc(100%+6px)] left-1/2 -translate-x-1/2 whitespace-nowrap bg-[#FFFCF6]/95 px-2.5 py-0.5 rounded-full border border-[#BEA477]/50 shadow-sm transition-colors group-hover:bg-[#FFFDF9]">
-                <span className="font-serif text-[10px] text-[#874B50] font-bold flex items-center gap-1">
-                  <Sparkles className="w-2.5 h-2.5 text-[#BEA477]" />
+              <div className="mt-2.5 sm:mt-3 whitespace-nowrap bg-[#FFFCF6] hover:bg-[#FFFDF9] px-3.5 py-1 sm:py-1.5 rounded-full border border-[#BEA477]/60 shadow-[0_2px_8px_rgba(87,70,61,0.08)] transition-all group-hover:border-[#874B50]/60">
+                <span className="font-serif text-xs sm:text-sm text-[#874B50] font-bold flex items-center gap-1.5">
+                  <Sparkles className="w-3.5 h-3.5 text-[#BEA477]" />
                   Tap seal to open
                 </span>
               </div>
@@ -461,17 +461,7 @@ export const Envelope = ({ onOpenComplete, onStartMusic }) => {
             )}
           </AnimatePresence>
         </motion.div>
-
-        {/* Quick Direct Link */}
-        <div className="mt-2.5 sm:mt-3 flex items-center justify-center">
-          <button
-            onClick={onOpenComplete}
-            className="text-[#7A665A] hover:text-[#57463D] font-sans text-xs tracking-widest uppercase flex items-center gap-1.5 transition-colors underline-offset-4 hover:underline py-1 font-medium"
-          >
-            Direct Access to Wedding Details
-            <ArrowRight className="w-3.5 h-3.5 text-[#BEA477]" />
-          </button>
-        </div>
+      
       </div>
     </motion.div>
   );

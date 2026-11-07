@@ -16,61 +16,113 @@ export const Blessings = () => {
 
       <div className="max-w-4xl mx-auto relative z-10">
         
-        {/* Sacred Sita-Rama Kalyana Mandapam Sanctum */}
+        {/* ==================================================================== */}
+        {/* Sacred Sri Sita Rama Kalyana Mandapam Sanctum (The Masterpiece WOW Section) */}
+        {/* ==================================================================== */}
         <motion.div
-          initial={{ opacity: 0, y: 25 }}
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-80px" }}
+          viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.9 }}
-          className="flex flex-col items-center text-center mb-12 sm:mb-16"
+          className="relative w-full max-w-4xl mx-auto mb-14 sm:mb-20 bg-gradient-to-b from-[#FFFDF9] via-[#FAF4EA] to-[#FFFDF9] rounded-[28px] sm:rounded-[36px] border-2 border-gold/80 shadow-2xl p-4 sm:p-7 md:p-9 overflow-hidden"
         >
-          {/* Temple Deepam & Balaji Emblem */}
-          <div className="relative mb-3 sm:mb-4">
-            <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white border-2 border-gold shadow-md flex items-center justify-center">
-              <BalajiIcon className="w-10 h-10 sm:w-12 sm:h-12 text-[#8B1E2B]" />
-            </div>
-            <div className="absolute -inset-1 rounded-full border border-gold/40 animate-pulse pointer-events-none" />
+          {/* Inner Decorative Dashed Gold Border */}
+          <div className="absolute inset-2 sm:inset-3 border border-dashed border-[#BEA477]/35 rounded-[22px] sm:rounded-[30px] pointer-events-none" />
+
+          {/* Four Corner Flourishes in Antique Gold */}
+          <div className="absolute top-3 left-3 text-[#8B1E2B] w-6 h-6 pointer-events-none">
+            <CornerFlourish position="top-left" />
+          </div>
+          <div className="absolute top-3 right-3 text-[#8B1E2B] w-6 h-6 pointer-events-none">
+            <CornerFlourish position="top-right" />
+          </div>
+          <div className="absolute bottom-3 left-3 text-[#8B1E2B] w-6 h-6 pointer-events-none">
+            <CornerFlourish position="bottom-left" />
+          </div>
+          <div className="absolute bottom-3 right-3 text-[#8B1E2B] w-6 h-6 pointer-events-none">
+            <CornerFlourish position="bottom-right" />
           </div>
 
-          {/* Golden Heading */}
-          <div className="flex items-center justify-center gap-2 text-[#8B1E2B] mb-2">
-            <Sparkles className="w-3.5 h-3.5 text-gold" />
-            <span className="font-sans text-[10px] sm:text-xs uppercase tracking-widest font-bold text-[#8B1E2B]">
+          <div className="relative z-10 flex flex-col items-center text-center">
+
+            {/* Sacred Invocations Header */}
+            <div className="flex items-center justify-center gap-2 text-[#8B1E2B] mb-1">
+              <span className="h-[1px] w-6 sm:w-12 bg-gradient-to-r from-transparent to-[#BEA477]" />
+              <Sparkles className="w-3.5 h-3.5 text-gold" />
+              <span className="font-sans text-[10px] sm:text-xs uppercase tracking-[0.22em] font-bold text-[#8B1E2B]">
+                శ్రీ సీతారామ వైవాహిక సన్నిధి
+              </span>
+              <Sparkles className="w-3.5 h-3.5 text-gold" />
+              <span className="h-[1px] w-6 sm:w-12 bg-gradient-to-l from-transparent to-[#BEA477]" />
+            </div>
+
+            <h3 className="font-serif text-2xl sm:text-3xl md:text-4xl text-[#241A15] font-bold tracking-wide mt-0.5">
               శ్రీ సీతారామ వైవాహిక మంగళ శ్లోకం
-            </span>
-            <Sparkles className="w-3.5 h-3.5 text-gold" />
-          </div>
+            </h3>
 
-
-
-          {/* Ornate Gold Bordered Temple Scroll - Warm Luminous Ivory */}
-          <div className="bg-white/95 backdrop-blur-md border-2 border-gold/70 rounded-3xl p-5 sm:p-8 md:p-10 max-w-3xl shadow-xl relative overflow-hidden">
-            <div className="absolute top-2.5 left-2.5 text-[#8B1E2B] w-6 h-6">
-              <CornerFlourish position="top-left" />
-            </div>
-            <div className="absolute top-2.5 right-2.5 text-[#8B1E2B] w-6 h-6">
-              <CornerFlourish position="top-right" />
-            </div>
-            <div className="absolute bottom-2.5 left-2.5 text-[#8B1E2B] w-6 h-6">
-              <CornerFlourish position="bottom-left" />
-            </div>
-            <div className="absolute bottom-2.5 right-2.5 text-[#8B1E2B] w-6 h-6">
-              <CornerFlourish position="bottom-right" />
-            </div>
-
-            {/* Sacred Telugu Sloka in Deep Regal Maroon */}
-            <p className="font-telugu text-[#8B1E2B] text-sm sm:text-base md:text-lg leading-[2.2] font-bold break-words px-2 sm:px-6 tracking-wide drop-shadow-sm">
-              శ్లో॥ జానక్యాః కమలామలాంజలి పుటేయాః పద్మరాగాయితాః<br />
-              న్యస్తా రాఘవ మస్తకేచ విలసత్కుంద ప్రసూనాయితాః<br />
-              స్రస్తాః శ్యామల కాయకాంతి కలితాః యా ఇంద్రనీలాయితాః<br />
-              ముక్తాస్తాః శుభదాభవంతు భవతాం శ్రీరామ వైవాహికాః ॥
+            <p className="font-serif italic text-xs sm:text-sm text-[#754E44] max-w-lg mx-auto mt-1 mb-4 sm:mb-5 font-medium">
+              "Invoking the supreme celestial union of Sri Rama &amp; Ma Janaki for lifelong harmony and auspicious grace."
             </p>
 
-            <div className="w-24 h-[1.5px] bg-gradient-to-r from-transparent via-gold to-transparent mx-auto my-3 sm:my-4" />
+            {/* Complete, Uncut, Luminous Sacred Kalamkari Artwork */}
+            <div className="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden border-2 border-gold/70 shadow-xl bg-[#FAF5EE] group mb-5 sm:mb-7">
+              {/* Subtle inner golden glow */}
+              <div className="absolute inset-0 border border-gold/30 rounded-2xl sm:rounded-3xl pointer-events-none z-10" />
 
-            <p className="font-serif italic text-xs sm:text-sm text-[#4A3C34] max-w-xl mx-auto leading-relaxed px-2 sm:px-4 font-medium">
-              "May the sacred pearls showered during the divine marriage of Sri Rama and Janaki—gleaming like radiant rubies in Sita's hands, pure white jasmines upon Raghava's crown, and luminous sapphires against his dark complexion—shower eternal joy, harmony, and prosperity upon Gowtham &amp; Sai Sunanda Devi."
-            </p>
+              <img
+                src="/images/sitarama.png"
+                alt="Sri Sita Rama Kalyanam Kalamkari Traditional Painting"
+                className="w-full h-auto block select-none filter contrast-[1.03] transition-transform duration-700 group-hover:scale-[1.01]"
+              />
+
+              {/* Graceful Bottom Caption Strip on Photo */}
+              <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent pt-6 pb-2 sm:pb-3 px-3">
+                <span className="font-telugu text-xs sm:text-sm text-ivory font-bold drop-shadow-md block">
+                  శ్రీ సీతారామ కళ్యాణ వైభోగం • పరమ పవిత్ర దాంపత్య దీవెనలు
+                </span>
+              </div>
+            </div>
+
+            {/* Sacred Vedic Sloka Inscription Scroll */}
+            <div className="w-full max-w-3xl bg-white/95 border-2 border-gold/60 rounded-2xl sm:rounded-3xl p-5 sm:p-7 md:p-9 shadow-lg relative overflow-hidden">
+              <div className="absolute top-2 left-2 text-gold/40 w-4 h-4 pointer-events-none">
+                <CornerFlourish position="top-left" />
+              </div>
+              <div className="absolute top-2 right-2 text-gold/40 w-4 h-4 pointer-events-none">
+                <CornerFlourish position="top-right" />
+              </div>
+              <div className="absolute bottom-2 left-2 text-gold/40 w-4 h-4 pointer-events-none">
+                <CornerFlourish position="bottom-left" />
+              </div>
+              <div className="absolute bottom-2 right-2 text-gold/40 w-4 h-4 pointer-events-none">
+                <CornerFlourish position="bottom-right" />
+              </div>
+
+              {/* The 4-Line Sacred Sloka */}
+              <p className="font-telugu text-[#8B1E2B] text-sm sm:text-base md:text-lg leading-[2.2] sm:leading-[2.4] font-bold break-words px-1 sm:px-4 tracking-wide drop-shadow-xs">
+                శ్లో॥ జానక్యాః కమలామలాంజలి పుటేయాః పద్మరాగాయితాః<br />
+                న్యస్తా రాఘవ మస్తకేచ విలసత్కుంద ప్రసూనాయితాః<br />
+                స్రస్తాః శ్యామల కాయకాంతి కలితాః యా ఇంద్రనీలాయితాః<br />
+                ముక్తాస్తాః శుభదాభవంతు భవతాం శ్రీరామ వైవాహికాః ॥
+              </p>
+
+              <GoldFiligreeDivider className="my-3 sm:my-4 max-w-xs" variant="lotus" />
+
+              {/* English Meaning */}
+              <p className="font-serif italic text-xs sm:text-sm text-[#4A3C34] max-w-2xl mx-auto leading-relaxed px-2 sm:px-4 font-medium">
+                "May the sacred pearls showered during the divine marriage of Sri Rama and Janaki—gleaming like radiant rubies in Sita's hands, pure white jasmines upon Raghava's crown, and luminous sapphires against his dark complexion—shower eternal joy, harmony, and prosperity upon Gowtham &amp; Sai Sunanda Devi."
+              </p>
+            </div>
+
+            {/* Sacred Benediction Footnote */}
+            <div className="mt-4 flex items-center justify-center gap-2">
+              <Sparkles className="w-3.5 h-3.5 text-gold" />
+              <span className="font-telugu text-xs sm:text-sm text-[#8B1E2B] font-bold">
+                సీతారాముల కల్యాణ వైభోగం వలె మీ దాంపత్యం కలకాలం వర్ధిల్లాలి
+              </span>
+              <Sparkles className="w-3.5 h-3.5 text-gold" />
+            </div>
+
           </div>
         </motion.div>
 
@@ -184,7 +236,7 @@ export const Blessings = () => {
             {/* Sacred Telugu Invitation Verse */}
             <div className="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-[#FDF9F0] via-[#FAF3E8] to-[#FDF9F0] border-2 border-gold/40 my-6 text-center shadow-sm">
               <p className="font-telugu text-xs sm:text-sm md:text-base text-[#241A15] font-semibold leading-relaxed px-1">
-                "జరిపించుటకు దైవజ్ఞులు నిశ్చయించినారు. కావున తామెల్లరు సకుటుంబ సపరివార సమేతముగా విచ్చేసి, నూతన వధూవరులను ఆశీర్వదించి, మా ఆతిథ్యము స్వీకరించి మమ్మానందింపజేయ కోరుచున్నాము."
+                "వివాహం జరిపించుటకు దైవజ్ఞులు నిశ్చయించినారు. కావున తామెల్లరు సకుటుంబ సపరివార సమేతముగా విచ్చేసి, నూతన వధూవరులను ఆశీర్వదించి, మా ఆతిథ్యము స్వీకరించి మమ్మానందింపజేయ కోరుచున్నాము."
               </p>
               <p className="font-serif italic text-xs sm:text-sm text-[#754E44] mt-2.5 sm:mt-3 leading-relaxed px-1 font-medium">
                 "We warmly solicit your gracious presence with family &amp; friends to shower your blessings upon the newly wedded couple and grace our hospitality."
